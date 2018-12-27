@@ -1,4 +1,4 @@
-# Hands-on 1
+# Hands-on 01 | Pods
 
 ## Create a namespace
 
@@ -11,6 +11,7 @@ kubectl apply -f 00-namespace.yaml # Declarative (do the same thing as above)
 ```bash
 # Use the recently created namespace
 # KubeCluster is context name
+kubectl config use-context KubeCluster
 kubectl config set-context KubeCluster --namespace=hands-on-1
 ```
 
@@ -35,6 +36,6 @@ To create a pod with manifest file we will use `kubectl apply`. This will only c
 # Create
 kubectl apply -f 01-pod.yaml
 
-# To delete the newly  created pod
+# To delete the newly created pod
 kubectl delete -f 01-pod.yaml
 ```

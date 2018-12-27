@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-temp
+  labels:
+    app: my-label-1 # this is the same label as in 01-rc.yaml
+spec:
+  containers:
+    - name: server-temp
+      image: sadedil/simpleinfoserver:latest
+      ports:
+        - containerPort: 80

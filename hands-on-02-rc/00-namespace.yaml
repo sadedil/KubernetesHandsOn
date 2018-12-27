@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: hands-on-2
+  labels:
+    name: hands-on-2
