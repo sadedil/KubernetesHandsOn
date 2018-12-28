@@ -8,20 +8,22 @@ kubectl config use-context KubeCluster
 kubectl config set-context KubeCluster --namespace=hands-on-2
 ```
 
+> `KubeCluster` is the name of the cluster
+
 ## Create a replication controller with imperative way (not recommended and deprecated way)
 
 There is no way to create a single rc with iterative way. We can run this command below (it's very similar to `hands-on-01`, the only difference is `--replicas=n` statement)
 
 ```bash
-kubectl run server2 --replicas=3 --image=sadedil/simpleinfoserver:latest
-# server2 is just an alias
+kubectl run pod2 --replicas=3 --image=sadedil/simpleinfoserver:latest
+# pod2 is just an alias
 ```
 
 To delete these objects created by `kubectl run`, we should delete deployment
 
 ```bash
-kubectl delete deploy server2
-# server2 is the name of the deployment we've just created
+kubectl delete deploy pod2
+# pod2 is the name of the deployment we've just created
 ```
 
 ## Create a replication controller with declarative way (recommended way)
