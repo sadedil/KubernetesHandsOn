@@ -22,18 +22,18 @@ kubectl config set-context KubeCluster --namespace=hands-on-1
 This will create a deployment, replica set and pods for us
 
 ```bash
-kubectl run server1 --image=sadedil/simpleinfoserver:latest # server1 is just an alias
+kubectl run pod1 --image=sadedil/simpleinfoserver:latest # pod1 is just an alias
 
 # To delete these objects created by `kubectl run`, you should delete deployment
 kubectl get deployments # get the name
-kubectl delete deploy server1 # server1 is the name
+kubectl delete deploy pod1 # pod1 is the name
 ```
 
 If we want to create a pod without deployment and replica set we can add `--restart=Never` argument. The default value of `restart` is `Always`.
 
 ```bash
 # To create single pod
-kubectl run server1 --image=sadedil/simpleinfoserver:latest --restart=Never
+kubectl run pod1 --image=sadedil/simpleinfoserver:latest --restart=Never
 ```
 
 ## Create a pod with declarative way (recommended way)

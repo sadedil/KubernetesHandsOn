@@ -6,7 +6,7 @@ metadata:
     app: web
 spec:
   containers:
-    - name: server1
+    - name: container1
       image: sadedil/simpleinfoserver:latest
       ports:
         - containerPort: 80
