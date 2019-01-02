@@ -5,7 +5,7 @@
 ```bash
 kubectl apply -f 00-namespace.yaml
 kubectl config use-context KubeCluster
-kubectl config set-context KubeCluster --namespace=hands-on-2
+kubectl config set-context KubeCluster --namespace=hands-on-2-rc
 ```
 
 > `KubeCluster` is the name of the cluster

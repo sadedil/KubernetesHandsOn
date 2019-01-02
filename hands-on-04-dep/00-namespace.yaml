@@ -1,6 +1,6 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: hands-on-2-rc
+  name: hands-on-4-dep
   labels:
-    name: hands-on-2-rc
+    name: hands-on-4-dep

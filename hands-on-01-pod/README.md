@@ -3,7 +3,7 @@
 ## Create a namespace
 
 ```bash
-kubectl create ns hands-on-1 # Imperative
+kubectl create ns hands-on-1-pod # Imperative
 kubectl apply -f 00-namespace.yaml # Declarative (do the same thing as above)
 ```
 
@@ -14,7 +14,7 @@ kubectl apply -f 00-namespace.yaml # Declarative (do the same thing as above)
 # Use the recently created namespace
 # KubeCluster is context name
 kubectl config use-context KubeCluster
-kubectl config set-context KubeCluster --namespace=hands-on-1
+kubectl config set-context KubeCluster --namespace=hands-on-1-pod
 ```
 
 ## Create a pod with imperative way (not recommended and deprecated way)

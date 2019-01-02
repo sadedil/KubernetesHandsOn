@@ -5,7 +5,7 @@
 ```bash
 kubectl apply -f 00-namespace.yaml
 kubectl config use-context KubeCluster
-kubectl config set-context KubeCluster --namespace=hands-on-3
+kubectl config set-context KubeCluster --namespace=hands-on-3-svc
 ```
 
 > `KubeCluster` is the name of the cluster
@@ -36,7 +36,7 @@ kubectl delete pod pod1 pod2 pod3
 kubectl delete service service-for-myvalue
 ```
 
-Then validate no resource remaining in this namespace (`hands-on-3`)
+Then validate no resource remaining in this namespace (`hands-on-3-svc`)
 ```bash
 kubectl get all
 ```
