@@ -35,8 +35,9 @@ This will create a single rc, three pods and no deployment.
 # Create
 kubectl apply -f 01-rc.yaml
 
-# To delete the newly created rc and linked pods
+# To delete the newly created rc, linked pods and the namespace
 kubectl delete -f 01-rc.yaml
+kubectl delete -f 00-namespace.yaml
 ```
 
 ## About the links between replication controller and pods

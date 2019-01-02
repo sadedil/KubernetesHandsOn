@@ -49,4 +49,5 @@ kubectl apply -f 01-svc.yaml
 
 # To delete all resources in yaml file
 kubectl delete -f 01-svc.yaml
+kubectl delete -f 00-namespace.yaml
 ```

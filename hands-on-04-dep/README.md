@@ -51,4 +51,5 @@ kubectl apply -f 03-dep-zero.yaml
 ```bash
 # To delete all resources in yaml file
 kubectl delete -f 01-dep.yaml
+kubectl delete -f 00-namespace.yaml
 ```

@@ -45,6 +45,7 @@ To create a pod with manifest file we will use `kubectl apply`. This will only c
 # Create
 kubectl apply -f 01-pod.yaml
 
-# To delete the newly created pod
+# To delete the newly created pod and the namespace
 kubectl delete -f 01-pod.yaml
+kubectl delete -f 00-namespace.yaml
 ```
