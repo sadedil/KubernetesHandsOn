@@ -1,20 +1,21 @@
-apiVersion: v1
-kind: ReplicationController                   # there is no mistake, service definition below (see: ---) 
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: rc3
+  name: dep4
 spec:
-  replicas: 3
+  replicas: 5
   selector:
-    mykey: myvalue
+    matchLabels:
+      mykey: myvalue
   template:                                   # pod definition starts from here
     metadata:
-      name: pod3
+      name: pod4
       labels:
         mykey: myvalue
     spec:
       containers:
-      - name: container3
-        image: sadedil/simpleinfoserver:latest
+      - name: container4
+        image: sadedil/simpleinfoserver:1.0.0 # something is hiding here (1.0.0)
         ports:
         - containerPort: 80
 ---

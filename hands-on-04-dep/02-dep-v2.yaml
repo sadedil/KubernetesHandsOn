@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep4
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      mykey: myvalue
+  template:                                   # pod definition starts from here
+    metadata:
+      name: pod4
+      labels:
+        mykey: myvalue
+    spec:
+      containers:
+      - name: container4
+        image: sadedil/simpleinfoserver:2.0.0 # the only difference from 01-dep.yaml
+        ports:
+        - containerPort: 80

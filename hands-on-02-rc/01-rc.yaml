@@ -6,7 +6,7 @@ spec:
   replicas: 3
   selector:
     app: my-label-1
-  template: # pod definition starts from here
+  template:                                   # pod definition starts from here
     metadata:
       name: pod2
       labels:
